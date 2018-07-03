@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{calc}
+\usepackage{setspace}
+\usepackage{multicol}
+\usepackage{fancyheadings}
+ 
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{aer}
+\usepackage{aertt}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{multirow}
+
+\setlength{\voffset}{-0.25in}
+\setlength{\topmargin}{0pt}
+\setlength{\hoffset}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{.4in}
+\setlength{\marginparsep}{0pt}
+\setlength{\marginparwidth}{0pt}
+\setlength{\marginparpush}{0pt}
+\setlength{\footskip}{.1in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.25in}
+\setlength{\parskip}{0pc}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bd}{\begin{description}}
+\newcommand{\ed}{\end{description}}
+\newcommand{\prbf}[1]{\textbf{#1}}
+\newcommand{\prit}[1]{\textit{#1}}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bdm}{\begin{displaymath}}
+\newcommand{\edm}{\end{displaymath}}
+\newcommand{\script}[1]{\begin{cal}#1\end{cal}}
+\newcommand{\citee}[1]{\citename{#1} (\citeyear{#1})}
+\newcommand{\h}[1]{\hat{#1}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\normal}{\mathcal{N}}
+
+\pagestyle{empty}
+
+
+
+\begin{document}
+\begin{table}
+\begin{center}
+\begin{tabular}{l|c|cc|c} 
+ Variable & OLS & Regime 1 & Regime 2 & Difference \\ \hline 
+
+ \multirow{2}{*}{Constant} & 1.3318* & 1.6662* & -2.4220* & 4.0882** \\ 
+ & (0.7986) & (0.9037) & (1.4418) & (1.7017) \\ [0.4pc]
+ \multirow{2}{*}{Time} & 0.0873*** & 0.0864*** & 0.1126*** & -0.0262*** \\ 
+ & (0.0019) & (0.0026) & (0.0032) & (0.0042) \\ [0.4pc]
+ \multirow{2}{*}{Age} & 0.1623*** & 0.1611*** & 0.1625* & -0.0014  \\ 
+ & (0.0539) & (0.0605) & (0.0979) & (0.1152) \\ [0.4pc]
+ \multirow{2}{*}{Age Squared} & -0.0033*** & -0.0035*** & -0.0027* & -0.0008  \\ 
+ & (0.0009) & (0.0010) & (0.0016) & (0.0020) \\ [0.4pc]
+ \multirow{2}{*}{Experience} & 0.3822*** & 0.4043*** & 0.3239*** & 0.0804** \\ 
+ & (0.0132) & (0.0139) & (0.0309) & (0.0338) \\ [0.4pc]
+ \multirow{2}{*}{Experience Squared} & -0.0115*** & -0.0119*** & -0.0096*** & -0.0024  \\ 
+ & (0.0008) & (0.0009) & (0.0018) & (0.0020) \\ [0.4pc]
+ \multirow{2}{*}{Earned Run Average} & -0.0602*** & -0.0614*** & 0.0133  & -0.0747*** \\ 
+ & (0.0037) & (0.0038) & (0.0149) & (0.0154) \\ [0.4pc]
+ \multirow{2}{*}{Wins/Games} & 7.0261*** & 6.9312*** & 12.7643*** & -5.8331*** \\ 
+ & (0.3283) & (0.3411) & (1.0284) & (1.0834) \\ [0.4pc]
+ \multirow{2}{*}{Saves/Games} & 2.1266*** & 1.9168*** & 3.8812*** & -1.9645*** \\ 
+ & (0.2872) & (0.3170) & (0.5672) & (0.6498) \\ [0.4pc]
+ \multirow{2}{*}{SO/BB} & 0.0245* & 0.0234* & 0.0653** & -0.0418  \\ 
+ & (0.0128) & (0.0137) & (0.0296) & (0.0326) \\ [0.4pc]\hline 
+\multirow{2}{*}{p} & - & \multicolumn{2}{c|}{0.9365} & - \\ 
+ & & \multicolumn{2}{c|}{(0.9521)} & \\ [0.4pc] 
+\multirow{2}{*}{q} & - & \multicolumn{2}{c|}{0.9397} & - \\ 
+ & & \multicolumn{2}{c|}{(0.9309)} & \\ \hline 
+(Pseudo) $R^2$ & 0.7373 & \multicolumn{2}{c|}{0.7614} & - \\ 
+Pseudo $R_{RS/OLS}^2$ & - & \multicolumn{2}{c|}{0.0917} & - \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{document}
